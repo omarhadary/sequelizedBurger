@@ -1,0 +1,30 @@
+body {
+	background-color: #f4b042;
+}
+.burgers {
+	background-color: lightgrey;
+	border: solid;
+	border-color: gray;
+	border-width: thin;
+	margin: 2%;
+	padding: 2%;
+}
+.devour-button {
+	border-radius: 2px;
+	margin: 2%;
+	padding: 2%;
+}
+.top-row {
+	color: red;
+	margin: 5% 0 0 0;
+	text-align: center;
+}
+.centered {
+	text-align: center;
+}
+#add-burger {
+	background-color: #337ab7;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+}

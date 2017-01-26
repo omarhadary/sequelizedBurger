@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="row top-row">
+		<div class="col-sm-offset-4 col-sm-4">
+			<img alt="Delicious" src="/assets/img/burger.png">
+			<h1>Eat-Da-Burger!</h1>
+		</div>
+	</div>
+	<div class="row middle-row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-3">
+			{{#each burgers}} 
+                {{#unless this.devoured}}
+			        <div class="burgers">
+				        {{this.id}}. {{this.burger_name}}
+			        </div>
+                {{/unless}}
+            {{/each}}
+		</div>
+		<div class="col-sm-2">
+			{{#each burgers}} 
+                {{#unless this.devoured}}
+			        <div>
+				        <form action="burgers/update/{{this.id}}?_method=PUT" method="post">
+					        <input name="devoured" type="hidden" value="true"> <button class="devour-button" type="submit">Devour it!</button>
+				        </form>
+			        </div>
+                {{/unless}}
+            {{/each}}
+		</div>
+		<div class="col-sm-3">
+			{{#each burgers}}
+                {{#if this.devoured}}
+                    <div class="burgers">
+                        {{this.id}}. {{this.burger_name}}
+                        <form action="burgers/update/{{this.id}}?_method=PUT" method="post">
+                            <input name="devoured" type="hidden" value="false">
+                        </form>
+                    </div>
+                {{/if}} 
+            {{/each}}
+		</div>
+		<div class="col-sm-3"></div>
+	</div>
+	<div class="row bottom-row">
+		<div class="col-sm-offset-4 col-sm-4 centered">
+			<form action="burgers/add" id="submit-form" method="post" name="submit-form">
+				<input id="submit-input" name="burger_name" type="text"><br>
+				<input id="add-burger" type="submit" value="Submit"><br>
+				<label for="submit-input">Enter a burger you want to eat. Click the "Submit" button.</label><br>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
