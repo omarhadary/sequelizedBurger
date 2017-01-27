@@ -1,20 +1,20 @@
-# Eat-Da-Burger!
+# Sequelize Eat-Da-Burger!
 
-![N|Solid](https://s-media-cache-ak0.pinimg.com/236x/6b/02/bc/6b02bcc5e6dd601dae1507b376cc8ca8.jpg)
+![N|Solid](http://docs.sequelizejs.com/en/v3/images/logo-small.png)
 
 Eat-Da-Burger is an app that allowes users to log their favourite burgers and then update the list of burgers once they've devoured them.
 
   - Follows an MVC design pattern
   - Uses Node and MYSQL to query and route data
   - Uses Handlebars to generate HTML
-  - Uses an ORM specifically designed for this application
+  - Uses Sequelize to query database
   - Heroku for deployment 
 
 > Full-stack site with user input through the browser. 
 
 ### Heroku Deployment
 
-https://eat-da-burgers.herokuapp.com/
+https://sequelized-burger-web-app.herokuapp.com/
 
 ### Tech
 
@@ -26,6 +26,7 @@ Eat-Da-Burger uses open source tools:
 * [npm method-override]
 * [npm body-parser]
 * [npm mysql]
+* [npm sequelize]
 * [Bootstrap]
 * [JQuery]
 
@@ -45,5 +46,6 @@ $ npm install
 [npm method-override]: <method-override>
 [npm body-parser]: <https://www.npmjs.com/package/body-parser>
 [npm mysql]: <https://www.npmjs.com/package/mysql>
+[npm sequelize]: <http://docs.sequelizejs.com/en/v3/>
 [Bootstrap]: <http://getbootstrap.com/>
 [JQuery]: <http://api.jquery.com/getb>
