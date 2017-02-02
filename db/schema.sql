@@ -1,2 +1,2 @@
-CREATE DATABASE burgers_db;
-USE burgers_db;
+CREATE DATABASE sequelizedBurgers_db;
+USE sequelizedBurgers_db;
