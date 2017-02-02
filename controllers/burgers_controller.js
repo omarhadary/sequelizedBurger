@@ -33,7 +33,7 @@ module.exports = function(app) {
             devoured: req.body.devoured
         }, {
             where: {
-                id: condition
+                id: req.params.id
             }
         }).then(function() {
             res.redirect("/burgers");
